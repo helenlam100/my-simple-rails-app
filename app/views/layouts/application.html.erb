@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MySimpleRailsApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<!-- <%= yield %> -->
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse"  role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="alert alert-success" role="alert">Well done! You have successfully read this alert message.</div>
+<div class="page-header">
+  <h1>Where art thou bootstrap?<small> "It is not in the stars to hold our destiny but in ourselves." -William Shakespeare</small></h1>
+</div>
+
+
+
+<div role="tabpanel">
+  <nav class="navbar navbar-inverse" role="navigation">
+
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">...</div>
+    <div role="tabpanel" class="tab-pane" id="profile">...</div>
+    <div role="tabpanel" class="tab-pane" id="messages">...</div>
+    <div role="tabpanel" class="tab-pane" id="settings">...</div>
+  </div>
+
+</nav>
+</div>
+
+<ol class="breadcrumb">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">The Complete Works of William Shakespeare</a></li>
+  <li class="active">Poetry</li>
+</ol>
+
+<div class="jumbotron">
+  <h1>Good dawning to thee, friend</h1>
+  <p class="lead">"Ignorance is the curse of God; knowledge is the wing wherewith we fly to heaven."</p>
+  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+</div>
+
+
+<div class="panel panel-default">
+  <div class="panel-heading">Shakespeare's Sonnets: Sonnet I</div>
+  <div class="panel-body">
+<p>
+<br>FROM fairest creatures we desire increase,<br/>
+<br>That thereby beauty's rose might never die,<br/>
+<br>But as the riper should by time decease,<br/>
+<br>His tender heir might bear his memory:<br/>
+<br>But thou, contracted to thine own bright eyes,<br/>
+<br>Feed'st thy light'st flame with self-substantial fuel,<br/>
+<br>Making a famine where abundance lies,<br/>
+<br>Thyself thy foe, to thy sweet self too cruel.<br/>
+<br>Thou that art now the world's fresh ornament<br/>
+<br>And only herald to the gaudy spring,<br/>
+<br>Within thine own bud buriest thy content<br/>
+<br>And, tender churl, makest waste in niggarding.<br/>
+<br>Pity the world, or else this glutton be,<br/>
+<br>To eat the world's due, by the grave and thee.<br/>
+</p>
+  </div>
+</div>
+
+<div class="well">Many years of happy days befall, my good fellow!</div>
+
+<div class="row">
+  <div class="col-md-4">
+    <p class="text-left">
+    Sonnet IV
+      <p>
+      Unthrifty loveliness, why dost thou spend
+      Upon thyself thy beauty's legacy?
+      Nature's bequest gives nothing but doth lend,
+      And being frank she lends to those are free.
+      Then, beauteous niggard, why dost thou abuse
+      The bounteous largess given thee to give?
+      Profitless usurer, why dost thou use
+      So great a sum of sums, yet canst not live?
+      For having traffic with thyself alone,
+      Thou of thyself thy sweet self dost deceive.
+      Then how, when nature calls thee to be gone,
+      What acceptable audit canst thou leave?
+      Thy unused beauty must be tomb'd with thee,
+      Which, used, lives th' executor to be.
+
+    </p>
+  </div>
+
+  <div class="col-md-4">
+    <p class="text-center">
+    Sonnet V
+      <br>
+      Those hours, that with gentle work did frame
+      The lovely gaze where every eye doth dwell,
+      Will play the tyrants to the very same
+      And that unfair which fairly doth excel:
+      For never-resting time leads summer on
+      To hideous winter and confounds him there;
+      Sap cheque'd with frost and lusty leaves quite gone,
+      Beauty o'ersnow'd and bareness every where:
+      Then, were not summer's distillation left,
+      A liquid prisoner pent in walls of glass,
+      Beauty's effect with beauty were bereft,
+      Nor it nor no remembrance what it was:
+      But flowers distill'd though they with winter meet,
+      Leese but their show; their substance still lives sweet.
+      </br>
+    </p>
+  </div>
+
+  <div class="col-md-4">
+    <p class="text-right">
+        Sonnet VI
+        <br>
+    Then let not winter's ragged hand deface
+    In thee thy summer, ere thou be distill'd:
+    Make sweet some vial; treasure thou some place
+    With beauty's treasure, ere it be self-kill'd.
+    That use is not forbidden usury,
+    Which happies those that pay the willing loan;
+    That's for thyself to breed another thee,
+    Or ten times happier, be it ten for one;
+    Ten times thyself were happier than thou art,
+    If ten of thine ten times refigured thee:
+    Then what could death do, if thou shouldst depart,
+    Leaving thee living in posterity?
+    Be not self-will'd, for thou art much too fair
+    To be death's conquest and make worms thine heir.
+      </br>
+    </p>
+  </div>
+</div>
+
+
+
+
+  <!-- Table -->
+  <table class="table table-bordered table-striped">
+
+    <!-- On rows -->
+
+    <tr>
+      <th>Comedy</th>
+      <th>History</th>
+      <th>Tragedy</th>
+      <th>Poetry</th>
+    </tr>
+
+
+    <!-- On cells (`td` or `th`) -->
+    <tr>
+      <td>All's Well That Ends Well</td>
+      <td>Henvy IV, part 1</td>
+      <td>King Lear</td>
+      <td>Venus and Adonis</td>
+    </tr>
+    <tr>
+      <td>As You Like It</td>
+      <td>Henry IV, part 2</td>
+      <td>Julius Caesar</td>
+      <td>A Lover's Complaint</td>
+    </tr>
+  </table>
+
+</body>
+
+
+</html>
